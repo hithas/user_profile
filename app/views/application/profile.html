@@ -1,0 +1,35 @@
+  
+<div class = "row">
+  <div class = "container">
+    
+  <div class = "col-md-1">
+      <a href="<%= @left_link %>"> <span class="glyphicon glyphicon-chevron-left"></span></a>
+  </div>
+    
+    <div class="col-md-5">
+      <img src="<%= @photo %>" alt="" width=400 alt="profile photo">
+    </div>
+        
+
+    
+      <div class = "col-md-5">
+        <h1> <span><%= @name %></span></h1> <h6> Member since <%= @member_since %> </h6>
+          <p> <%= @desc %> </p>
+          <p> <b>Location:</b> <%= @location %></p>
+          <p> <b>Completion:</b> </p>
+              <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="<%= @completed %>" aria-valuemin="0" aria-valuemax="100" style="width: <%= @completed %>%;">
+                    <%= @completed %>%
+                  </div>
+              </div>
+          </div>
+      
+    
+    <div class = "col-md-1">
+      <a href="<%= @right_link %>"> <span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+    
+    </div>
+  
+  
+</div>
